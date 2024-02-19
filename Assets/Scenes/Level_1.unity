@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 199662226}
   - component: {fileID: 199662228}
   - component: {fileID: 199662227}
+  - component: {fileID: 199662231}
   m_Layer: 0
   m_Name: Ground Tiles
   m_TagString: Untagged
@@ -735,6 +736,28 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!64 &199662231
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199662225}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &480676922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1477,6 +1500,8 @@ GameObject:
   - component: {fileID: 1291370817}
   - component: {fileID: 1291370816}
   - component: {fileID: 1291370819}
+  - component: {fileID: 1291370821}
+  - component: {fileID: 1291370820}
   m_Layer: 0
   m_Name: Tyyppi numero dos
   m_TagString: Untagged
@@ -1491,7 +1516,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291370815}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 699e1057111536f4aba23102e4806e43, type: 3}
   m_Name: 
@@ -1592,6 +1617,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1291370820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291370815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aafc66fb3765717498fb9ab286f07f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1291370821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291370815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2f41154638f5b46aba459a67e0ab5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
 --- !u!1 &1333488389
 GameObject:
   m_ObjectHideFlags: 0
